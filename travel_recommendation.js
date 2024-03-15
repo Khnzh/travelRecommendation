@@ -6,7 +6,7 @@ function searchTour() {
       .then(response => response.json())
       .then(data => {
         const condition = data;
-        if (input === 'city') {
+        if (input === 'country') {
           // Create a new div element
         const cardDiv1 = document.createElement("div");
         const cardDiv2 = document.createElement("div");
