@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C82AD;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.title {
+    text-align: right;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.searchBar {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar input {
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    padding: 5px;
+}
+
+.searchButton, .clearButton {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.searchButton:hover, .clearButton:hover {
+    background-color: darkgreen;
+}
+
+/* main section styles */
+main
+{
+    background-image: url("./background.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+.mainCont
+{
+    background-position: left, right; /* Position the gradients */
+    background-size: 700px 100%, auto; /* Set the size of the gradients */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(58, 58, 186), rgba(0, 0, 255, 0));
+    display: flex;
+    height: 700px;
+}
+
+.small {
+    flex: 10; /* Takes up 5 parts out of 100 */
+    background-color: none; /* Example color for the smaller div */
+}
+.small img
+{
+    margin: 10%;
+}
+
+.large {
+    flex: 90; /* Takes up 95 parts out of 100 */
+    background-color: none;
+    margin-left: 2%; /* Example color for the larger div */
+}
+
+.largeContact {
+    flex: 90; /* Takes up 95 parts out of 100 */
+    background-color: none;
+    margin-left: 2%; /* Example color for the larger div */
+    display: flex;
+    flex-direction: row;
+}
+.homeT
+{
+    color: white;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 900;
+    margin-top: -2%;
+    letter-spacing: 0.1em;
+}
+.huge {
+    margin-top: 7%;
+    letter-spacing: 0.3em;
+    font-size: 3em; /* Set the font size to be bigger */
+    color: white; /* Set the font color to white */
+    font-weight: 900;
+    line-height: 1.5; /* Increase the line spacing */
+}
+.vertical-line {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width: 7%;
+    height: 400px;
+    background-color: black; /* Set the color of the line */
+    border-radius: 25%; /* Make the corners rounded */
+    border-radius: 20px;
+    margin-left: 30%;
+    display: flex;
+}
+
+.bookButton {
+    background-color: #a2ff86;
+    color: #164B60;
+    border: none;
+    margin-top: 2%;
+    width: 15%;
+    height: 8%;
+    font-size: 1.4em;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.bookButton:hover {
+    color: blue;
+}
+
+.about
+{color: white;
+    line-height: 1.5;
+    margin-top: -2%;
+    letter-spacing: 0.1em;
+    margin-right: 3%;
+    background-color: rgba(0, 0, 0, 0.41);}
+
+.team{
+    margin-top: 6%;
+    margin-left: 3.6%;
+    margin-right: 10%;
+    display: flex;
+    height: 25%;
+}
+
+.t{
+    margin-top: 1%;
+    float: left;
+}
+.members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100%;
+    color: white;
+}
+
+.left, .center, .right {
+    display: flex;
+    border-radius: 10px;
+    flex: 1;
+    margin: 1%;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+
+.personIcon{
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50px;
+    height: 50px;
+}
+
+.personDesc{
+    margin:10%;
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(auto-fill, minmax(20px, auto));
+    gap: 10px; /* Adjust the gap between grid items */
+}
+.role {
+    background-color: darkblue;
+    border-radius: 5px;
+    border-color: white;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white; /* Add white border around the role rectangle */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+}
+.leftContent {
+    flex: 0.8; /* Add padding to separate the two content areas */
+}
+
+.rightContent {
+    flex: 1;
+}
+.contactInput
+{   margin: 7%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.41); /* Semi-transparent black background */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(auto-fill, minmax(20px, auto));
+    gap: 20px; /* Adjust the gap between grid items */
+    color: white;
+}
+.contactInput input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    height: 200px; /* Set the height of the textarea */
+    padding: 10px; /* Add padding to the textarea */
+    font-size: 16px; /* Set the font size of the text */
+    border: 1px solid #ccc; /* Add a border to the textarea */
+    border-radius: 5px; /* Add rounded corners to the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.card {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden; /* Ensures rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.card img {
+    width: 100%;
+    height: 50%; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+.card-content {
+    padding: 20px;
+    padding-top: 2px;
+}
+
+.card-content h2 {
+    margin-bottom: 5px;
+}
+.card-content p {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color:green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
